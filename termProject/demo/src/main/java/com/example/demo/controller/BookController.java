@@ -61,7 +61,7 @@ public class BookController {
 		return ResponseEntity.ok().body(response);
 	}
 	
-	// 임시로 추가
+	// 테이블 데이터 불러오기 용도
 	@GetMapping("/table")
 	public ResponseEntity<?> allBookList(){
 		List<BookEntity> entities = service.retrieveAll();
